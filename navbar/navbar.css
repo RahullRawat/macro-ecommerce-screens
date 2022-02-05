@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
 
 .nav-bar {
-	padding: 0.5rem 20rem;
 	background-color: var(--global-color);
+	justify-content: space-around;
 }
 
 .nav-brand-title a {
@@ -19,26 +19,17 @@
 	display: none;
 }
 
-@media only screen and (max-width: 1024px) {
-	.nav-bar {
-		padding: 0.5rem 12rem;
-	}
-}
-
 @media only screen and (max-width: 768px) {
 	html {
 		font-size: 50%;
-	}
-	.nav-bar {
-		padding: 0.5rem 8rem;
 	}
 }
 
 @media only screen and (max-width: 480px) {
 	.nav-bar {
-		padding: 0.5rem 5rem;
+		justify-content: space-between;
+		padding: 1.3rem 3rem;
 	}
-
 	.nav-center,
 	.nav-links {
 		display: none;
