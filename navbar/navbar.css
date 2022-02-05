@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
+
+.nav-bar {
+	padding: 0.5rem 20rem;
+	background-color: var(--global-color);
+}
+
+.nav-brand-title a {
+	font-size: 4rem;
+	font-family: "Qwigley", cursive;
+}
+
+.btn-nav {
+	padding: 0.8rem 2rem;
+	color: var(--global-color);
+}
+
+.hamburger-icon {
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.nav-bar {
+		padding: 0.5rem 12rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 50%;
+	}
+	.nav-bar {
+		padding: 0.5rem 8rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.nav-bar {
+		padding: 0.5rem 5rem;
+	}
+
+	.nav-center,
+	.nav-links {
+		display: none;
+	}
+
+	.hamburger-icon {
+		display: block;
+		cursor: pointer;
+	}
+}
