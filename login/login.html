@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://meta-ui.netlify.app/style.css" />
+		<link rel="stylesheet" href="../navbar/navbar.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="./login.css" />
+		<script
+			src="https://kit.fontawesome.com/4e7a84495e.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="nav-bar">
+			<div class="nav-brand-title">
+				<a href="#">The Aipan Store</a>
+			</div>
+			<div class="nav-center sm-text">
+				<a href="#">Home</a>
+				<a href="#">Products</a>
+			</div>
+			<div class="nav-links sm-text">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="far fa-heart"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+				<a href="#" class="btn btn-nav">Login</a>
+			</div>
+			<div class="hamburger-icon md-text">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+
+		<section class="login-container">
+			<div class="login">
+				<h1 class="login-title md-text">Login</h1>
+				<form class="login-form sm-text">
+					<label for="email">Username or Email </label>
+					<input
+						id="email"
+						name="email"
+						type="email"
+						placeholder="Enter Email"
+					/>
+
+					<label for="password">Password </label>
+					<input id="password" type="password" placeholder="Enter password" />
+				</form>
+				<a href="#" class="forgot-password">Forgot Your Password ?</a>
+				<button class="btn btn-primary">Login</button>
+
+				<div class="no-account">
+					Don't have an account ? <a href="#">Sign Up </a>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
