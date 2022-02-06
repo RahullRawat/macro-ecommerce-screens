@@ -1,0 +1,9 @@
+.term-condition {
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+.term-condition > input {
+	margin-right: 0.5rem;
+}
