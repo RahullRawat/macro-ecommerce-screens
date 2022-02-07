@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://meta-ui.netlify.app/style.css" />
+		<link rel="stylesheet" href="../navbar/navbar.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="./signup.css" />
+		<link rel="stylesheet" href="../login/login.css" />
+		<script
+			src="https://kit.fontawesome.com/4e7a84495e.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Signup</title>
+	</head>
+	<body>
+		<div class="nav-bar">
+			<div class="nav-brand-title">
+				<a href="#">The Aipan Store</a>
+			</div>
+			<div class="nav-center sm-text">
+				<a href="#">Home</a>
+				<a href="#">Products</a>
+			</div>
+			<div class="nav-links sm-text">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="far fa-heart"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+				<a href="#" class="btn btn-nav">Login</a>
+			</div>
+			<div class="hamburger-icon md-text">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+
+		<section class="login-container">
+			<div class="login">
+				<h1 class="login-title md-text">Signup</h1>
+				<form class="login-form sm-text">
+					<label for="name">Name</label>
+					<input id="name" type="text" placeholder="Enter Name" />
+					<label for="email">Username or Email </label>
+					<input
+						id="email"
+						name="email"
+						type="email"
+						placeholder="Enter Email"
+					/>
+
+					<label for="password">Password </label>
+					<input id="password" type="password" placeholder="Enter password" />
+
+					<label for="password">Confirm Password </label>
+					<input id="password" type="password" placeholder="Enter password" />
+				</form>
+
+				<div class="term-condition">
+					<input id="term-condition" type="checkbox" />
+					<label for="term-condition"> I accept all terms & conditions</label>
+				</div>
+
+				<button class="btn btn-primary">Signup</button>
+
+				<div class="no-account">
+					Already have an account ? <a href="#">Login </a>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
