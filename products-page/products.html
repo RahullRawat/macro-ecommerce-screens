@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://meta-ui.netlify.app/style.css" />
+		<link rel="stylesheet" href="../navbar/navbar.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="./products.css" />
+		<link rel="stylesheet" href="../home/home.css" />
+		<script
+			src="https://kit.fontawesome.com/4e7a84495e.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Products</title>
+	</head>
+	<body>
+		<div class="nav-bar">
+			<div class="nav-brand-title">
+				<a href="#">The Aipan Store</a>
+			</div>
+			<div class="nav-center sm-text">
+				<a href="#">Home</a>
+				<a href="#">Products</a>
+			</div>
+			<div class="nav-links sm-text">
+				<a href="#"><i class="fas fa-search"></i></a>
+				<a href="#"><i class="far fa-heart"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+				<a href="#" class="btn btn-nav">Login</a>
+			</div>
+			<div class="hamburger-icon md-text">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="product">
+			<aside class="filter-product">
+				<div class="filter-heading">
+					<h1>Filters</h1>
+				</div>
+
+				<div class="filters mt-4 slider">
+					<input
+						type="range"
+						min="0"
+						name="slider"
+						id="slider"
+						class="range"
+						max="100"
+					/>
+				</div>
+
+				<div class="filters mt-4 sm-text">
+					<h2>Price</h2>
+					<div>
+						<input type="radio" name="price" id="price1" />
+						<label for="price1">Under ₹1000</label>
+					</div>
+					<div>
+						<input type="radio" name="price" id="price2" />
+						<label for="price2">Under ₹2000</label>
+					</div>
+					<div>
+						<input type="radio" name="price" id="price3" />
+						<label for="price3">Under ₹3000</label>
+					</div>
+					<div>
+						<input type="radio" name="price" id="price4" />
+						<label for="price4">Under ₹4000</label>
+					</div>
+				</div>
+
+				<div class="filters sm-text mt-4">
+					<h2>Category</h2>
+
+					<div>
+						<input type="checkbox" />
+						<label for="checkbox">Paintings</label>
+					</div>
+
+					<div>
+						<input type="checkbox" />
+						<label for="checkbox">Bags</label>
+					</div>
+
+					<div>
+						<input type="checkbox" />
+						<label for="checkbox">Diary</label>
+					</div>
+
+					<div>
+						<input type="checkbox" />
+						<label for="checkbox">Coaster</label>
+					</div>
+				</div>
+
+				<div class="filters sm-text mt-4">
+					<h2>Rating</h2>
+
+					<div>
+						<input type="radio" name="rating" id="rating-4" />
+						<label for="rating-4">4 Stars & above</label>
+					</div>
+
+					<div>
+						<input type="radio" name="rating" id="rating-3" />
+						<label for="rating-3">3 Stars & above</label>
+					</div>
+
+					<div>
+						<input type="radio" name="rating" id="rating-2" />
+						<label for="rating-2">2 Stars & above</label>
+					</div>
+
+					<div>
+						<input type="radio" name="rating" id="rating-1" />
+						<label for="rating-1">1 Stars & above</label>
+					</div>
+				</div>
+
+				<button class="btn btn-link">Clear Filters</button>
+			</aside>
+
+			<main class="product-container">
+				<div class="product-search">
+					<input type="text" placeholder="Enter Product........" />
+					<button class="btn btn-primary">Search</button>
+				</div>
+
+				<div class="show-products">
+					Showing All Products <span>(Showing 20 products)</span>
+				</div>
+
+				<div class="featured-categories">
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets/paintings/sun-painting.jpg" alt="paintings"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Sun Painting</p>
+							<span class="currency">Rs 999.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/bags/bag1.jpg" alt="bag" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Cotton Fabric Bag</p>
+							<span class="currency">Rs 760.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets//diary/diary2.jpg" alt="diary"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Aipan Design Handmade Diary</p>
+							<span class="currency">Rs 560.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets/coaster/coaster2.jpg" alt="coaster"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Handcrafted square tea coaster</p>
+							<span class="currency">Rs 740.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets/coaster/coaster1.jpg" alt="coaster"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Handcrafted square tea coaster</p>
+							<span class="currency">Rs 890.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/diary/diary3.jpg" alt="diary" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Handmade Diary</p>
+							<span class="currency">Rs 560.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/bags/bag2.jpg" alt="bags" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Cotton Fabric Bag</p>
+							<span class="currency">Rs 760.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets/paintings/painting1.jpg" alt="paintings"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Aipan Painting</p>
+							<span class="currency">Rs 2200.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/bags/bag5.jpeg" alt="bags" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Khadi Cotton Bag</p>
+							<span class="currency">Rs 840.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets/coaster/coaster4.jpg" alt="coaster"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Handcrafted round tea coaster</p>
+							<span class="currency">Rs 740.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img
+								src="../assets/paintings/lord-budha-wall-painting.jpg"
+								alt="paintings"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Lord Buddha Wall Painting</p>
+							<span class="currency">Rs 999.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/diary/diary4.jpg" alt="diary" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Seven Chakra Flexi Notebook</p>
+							<span class="currency">Rs 640.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img
+								src="../assets/paintings/saraswati-painting.jpg"
+								alt="paintings"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Goddess Saraswati Painting</p>
+							<span class="currency">Rs 6800.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/bags/bag4.jpg" alt="bags" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Beautiful Tote Bag</p>
+							<span class="currency">Rs 760.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets/coaster/coaster5.jpg" alt="coaster"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Handcrafted round tea coaster</p>
+							<span class="currency">Rs 740.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img
+								src="../assets/paintings/folk-dance-painting.jpg"
+								alt="paintings"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+						<a href="#"><i class="far fa-heart"></i></a>
+						<div class="price-container text-center">
+							<p class="item-name">Folk Dance Beautiful Painting</p>
+							<span class="currency">Rs 8400.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img src="../assets/coaster/coaster6.jpg" alt="coaster"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Handcrafted round tea coaster</p>
+							<span class="currency">Rs 740.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/diary/diary5.jpg" alt="diary" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Aipan Design Handmade Diary</p>
+							<span class="currency">Rs 560.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"
+							><img
+								src="../assets/paintings/sun-face-painting.jpg"
+								alt="paintings"
+						/></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Sun Face Aipan Painting</p>
+							<span class="currency">Rs 3800.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+
+					<div class="featured-items">
+						<a href="#"><img src="../assets/bags/bag3.jpg" alt="bags" /></a>
+
+						<a href="#"><i class="far fa-heart"></i></a>
+
+						<div class="price-container text-center">
+							<p class="item-name">Cotton Fabric Bag</p>
+							<span class="currency">Rs 740.00</span>
+						</div>
+						<button class="btn btn-primary btn-category">Add to cart</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
