@@ -4,8 +4,9 @@ h1 {
 
 .product {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 1400px;
+	max-width: 1400px;
 	margin: auto;
 	margin-top: 5rem;
 }
@@ -119,4 +120,41 @@ hr {
 span {
 	font-size: 1.8rem;
 	font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+	.product {
+		justify-content: center;
+		max-width: 800px;
+		margin: auto;
+		margin-top: 4rem;
+	}
+
+	.card-horizontal {
+		margin-bottom: 4rem;
+	}
+
+	.price-details-container {
+		margin-bottom: 8rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.product {
+		max-width: 500px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.product {
+		max-width: 280px;
+	}
+
+	.card-horizontal {
+		flex-direction: column;
+	}
+
+	.card-horizontal > img {
+		width: 100%;
+	}
 }
